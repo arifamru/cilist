@@ -1,0 +1,8 @@
+version: "3.9"
+services:
+  frontend-contoh:
+    image: arifamru/cilist-fe:1.0
+    ports:
+      - 3000:3000
+    environment:
+        REACT_APP_BACKEND_URL: "http://localhost:5000"
